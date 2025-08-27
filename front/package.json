@@ -1,0 +1,28 @@
+{
+  "name": "taskforce-front",
+  "version": "1.0.0",
+  "description": "Front-end Vue.js pour l'application Taskforce",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.0",
+    "@vue/compiler-sfc": "^3.3.0",
+    "@vue/cli-plugin-babel": "^5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.0"
+  },
+  "keywords": [
+    "vue",
+    "frontend",
+    "taskforce"
+  ],
+  "author": "",
+  "license": "MIT"
+}
