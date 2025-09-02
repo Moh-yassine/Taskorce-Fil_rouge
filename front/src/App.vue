@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <HomePage />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HomePage
-  }
+  name: 'App'
 }
 </script>
 
 <style>
+/* Global CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -29,21 +25,24 @@ body {
 }
 
 #app {
-  width: 100%;
   min-height: 100vh;
 }
 
-/* Global styles */
-button {
-  cursor: pointer;
-}
-
+/* Global link styles */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Global button styles */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Global input styles */
+input, textarea {
+  font-family: inherit;
 }
 </style>
