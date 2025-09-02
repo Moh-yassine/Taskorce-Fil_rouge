@@ -1,28 +1,52 @@
 {
   "name": "taskforce-front",
   "version": "1.0.0",
-  "description": "Front-end Vue.js pour l'application Taskforce",
+  "description": "Frontend Vue.js pour l'application TaskForce - Outil de répartition dynamique des tâches",
   "main": "index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve"
+    "dev": "vue-cli-service serve",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "vue": "^3.3.0"
+    "@heroicons/vue": "^2.0.0",
+    "axios": "^1.5.0",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/eslint-parser": "^7.28.0",
+    "@vue/cli-plugin-babel": "^5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.0",
+    "@vue/cli-plugin-router": "^5.0.0",
+    "@vue/cli-plugin-vuex": "^5.0.0",
     "@vue/cli-service": "^5.0.0",
     "@vue/compiler-sfc": "^3.3.0",
-    "@vue/cli-plugin-babel": "^5.0.0",
-    "@vue/cli-plugin-eslint": "^5.0.0"
+    "@vue/test-utils": "^2.4.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.17.0"
   },
   "keywords": [
     "vue",
     "frontend",
-    "taskforce"
+    "taskforce",
+    "gestion-taches",
+    "ia",
+    "productivite"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": "TaskForce Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskforce/taskforce-front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taskforce/taskforce-front/issues"
+  },
+  "homepage": "https://taskforce.com"
 }
