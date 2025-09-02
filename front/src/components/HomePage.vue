@@ -41,7 +41,7 @@
             
             <p class="privacy-text">
               En saisissant mon email, j'accepte la 
-              <a href="#privacy" class="privacy-link">politique de confidentialité</a> de TaskForce.
+              <router-link to="/privacy" class="privacy-link">politique de confidentialité</router-link> de TaskForce.
             </p>
           </div>
         </div>
@@ -132,17 +132,28 @@ export default {
   color: #374151;
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 2px solid #374151;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.login-link:hover {
+  color: #00bcd4;
+  border-color: #00bcd4;
 }
 
 .cta-button {
   background: #00bcd4; 
   color: white;
-  border: none;
+  border: 2px solid transparent;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .cta-button:hover {
@@ -209,8 +220,8 @@ export default {
   background: #00bcd4;
   color: white;
   border: none;
-  padding: 0.875rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
